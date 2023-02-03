@@ -10,7 +10,6 @@ function handleGIF() {
 	)
 		.then((response) => response.json())
 		.then((response) => {
-			console.log(response);
 			img.src = response.data.images.original.url;
 			keyword.textContent = searchBar.value;
 			img.classList.add("active");
