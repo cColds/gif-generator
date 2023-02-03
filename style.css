@@ -1,0 +1,102 @@
+/* GENERAL STYLES */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px 200px;
+	background-color: #1e293b;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	gap: 15px;
+}
+
+button {
+	cursor: pointer;
+	border: 0;
+}
+
+/* TITLE */
+
+h1 {
+	color: white;
+}
+
+/* SEARCH BAR */
+
+.search-bar-container {
+	position: relative;
+	height: 50px;
+}
+
+input {
+	height: inherit;
+	width: 100%;
+	position: absolute;
+	border: 0;
+	border-radius: 2px;
+	transition: 0.5s;
+	background-color: #272530;
+	outline: 1px solid #94a3b8;
+	color: white;
+	font-size: 1.1rem;
+	padding-left: 3.5rem;
+}
+
+input:focus {
+	outline: 1px solid skyblue;
+	box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+	position: absolute;
+	height: inherit;
+	width: 50px;
+	background-image: linear-gradient(
+		to right top,
+		#051937,
+		#06264f,
+		#073369,
+		#064183,
+		#054f9f
+	);
+	border-radius: 2px 0 0px 2px;
+}
+
+svg {
+	width: 28px;
+	padding: 0.25em;
+	fill: white;
+	transition: 0.5s;
+}
+
+.search:hover svg {
+	fill: #7dd3fc;
+}
+
+/* GIF */
+
+.keyword {
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 2.5rem;
+}
+
+img {
+	border-radius: 5px;
+	width: inherit;
+	max-height: 500px;
+	object-fit: contain;
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+img.active {
+	visibility: visible;
+}
