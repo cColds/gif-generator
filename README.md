@@ -10,7 +10,7 @@
 
 # Features
 
--   Search bar to get a GIF
+-   Search bar
 -   GIPHY API
 
 # Built with
@@ -23,4 +23,4 @@
 
 # What I learned
 
--   Usage on how to fetch and use APIs (response.json, promises, and fetch).
+-   Usage on how to fetch and use APIs (response.json, async/await, and fetch).
